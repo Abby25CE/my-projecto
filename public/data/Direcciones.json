@@ -1,0 +1,52 @@
+[
+  {
+    "id": 10,
+    "nombre": "Luz Elena Espinosa Baez",
+    "direccion": "Boulevard de las Galaxias",
+    "numero": 78,
+    "referencia": "Casa Blanca con portones azules, segunda casa empezando el empedrado",
+    "ciudad": "La Piedad",
+    "estado": "Michoacan",
+    "cp": 59310
+  },
+  {
+    "id": 20,
+    "nombre": "Axel Daniel Martinez",
+    "direccion": "Ing heber Soto Fierro",
+    "numero": 120,
+    "referencia": "Departamentos el oasis",
+    "ciudad": "Morelia",
+    "estado": "Michoacan",
+    "cp": 58120
+  },
+  {
+    "id": 30,
+    "nombre": "Luna Abigail Carrillo Espinosa",
+    "direccion": "Ing heber Soto Fierro",
+    "numero": 120,
+    "referencia": "Departamentos el oasis",
+    "ciudad": "Morelia",
+    "estado": "Michoacan",
+    "cp": 58120
+  },
+  {
+    "id": 40,
+    "nombre": "Juan Pablo Hernandez Correa",
+    "direccion": "Ing heber Soto Fierro",
+    "numero": 120,
+    "referencia": "Departamentos el oasis",
+    "ciudad": "Morelia",
+    "estado": "Michoacan",
+    "cp": 58120
+  },
+  {
+    "id": 50,
+    "nombre": "Denisse Ortiz Martinez",
+    "direccion": "Ing heber Soto Fierro",
+    "numero": 120,
+    "referencia": "Departamentos el oasis",
+    "ciudad": "Morelia",
+    "estado": "Michoacan",
+    "cp": 58120
+  }
+]

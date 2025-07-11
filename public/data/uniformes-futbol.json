@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme local Club América 2024 con tecnología dry-fit y sublimado de alta calidad.",
+    "precio": 100,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Futbol 7",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 2,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme visitante Chivas Guadalajara 2024 con tela transpirable y resistente.",
+    "precio": 200,
+    "genero": "Hombre",
+    "cantidad": 1,
+    "nombreSubCategoria": "Femenil",
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 3,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme alternativo Tigres UANL edición limitada con detalles dorados.",
+    "precio": 300,
+    "genero": "Mujer",
+    "nombreSubCategoria": "Femenil",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 4,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme local Pumas UNAM 2024, 100% poliéster ecológico, estampado durable.",
+    "precio": 400,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 5,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Conjunto entrenamiento Selección Mexicana 2024, ideal para uso diario y entrenamiento.",
+    "precio": 500,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 6,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 600,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 7,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 700,
+    "nombreSubCategoria": "Futbol 7",
+    "genero": "Hombre",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 8,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 800,
+    "nombreSubCategoria": "Femenil",
+    "genero": "Mujer",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 9,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "genero": "Mujer",
+    "precio": 900,
+    "nombreSubCategoria": "Femenil",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 10,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "genero": "Hombre",
+    "precio": 1000,
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 11,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 1100,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 12,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 1200,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Futbol 7",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  },
+  {
+    "id": 13,
+    "categoria": "FÚTBOL SOCCER",
+    "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
+    "precio": 1300,
+    "genero": "Hombre",
+    "nombreSubCategoria": "Profesional",
+    "cantidad": 1,
+    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+  }
+]
