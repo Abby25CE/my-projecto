@@ -66,7 +66,7 @@ const Navbar: FC = () => {
               className="rounded-lg text-sm max-w-[180px]"
             />
             <div className="relative">
-              <a href="/CARD" className="hover:underline">
+              <a href="/Carrito" className="hover:underline">
                 <ShoppingCart className="w-7 h-7 text-gray-800" />
                 <span className="absolute -top-2 -right-2 bg-indigo-900 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   6
