@@ -179,10 +179,11 @@ const CatalogoVista: React.FC<UniformProps> = () => {
                 <h3 className="text-[#190E46] font-bold text-lg mb-2 mt-4">
                   {item.categoria}
                 </h3>
+                <h6>{item.equipo}</h6>
                 <p className="text-gray-700 text-sm mb-4">{item.descripcion}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-green-700 font-semibold">
-                    ${item.precio} MXN
+                    ${item.precio} {item.moneda}
                   </span>
                   <button className="bg-[#190E46] text-white px-4 py-2 rounded hover:bg-indigo-800 text-sm">
                     Comprar

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "codigo": "SKZ12345",
+    "sku": "CRA-VIS-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club America Local",
     "descripcion": "Uniforme local Club América 2024 con tecnología dry-fit y sublimado de alta calidad.",
@@ -10,11 +11,28 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Futbol 7",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/d1/f6/83/d1f6831f97937029545704e5bd37c819.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/b4/51/20/b45120eb6ae3dc8e7c951db2f8d7e0fb.jpg",
+      "https://i.pinimg.com/736x/50/aa/e2/50aae2f37c98e18efc76b9bca795613b.jpg",
+      "https://i.pinimg.com/736x/d1/80/7c/d1807c533160d8f5cc0262ee7f9085ad.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 2,
     "codigo": "SKX12355",
+    "sku": "CHI-ALT-2025-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Chivas Alternativa",
     "descripcion": "Uniforme visitante Chivas Guadalajara 2024 con tela transpirable y resistente.",
@@ -23,11 +41,28 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Femenil",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/1200x/7b/55/dd/7b55dd88967236ecc11f0bdabf2c3843.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/62/42/06/62420605c8c2676f6b80443b3c040ee6.jpg",
+      "https://mx.pinterest.com/pin/62557882303409017/",
+      "https://i.pinimg.com/1200x/fd/9f/69/fd9f69e3f4ee3a78362f7c98db6cff5c.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 3,
     "codigo": "SKC12315",
+    "sku": "TGR-VIS-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Tigres Visitante",
     "descripcion": "Uniforme alternativo Tigres UANL edición limitada con detalles dorados.",
@@ -36,11 +71,28 @@
     "genero": "Mujer",
     "nombreSubCategoria": "Femenil",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/d2/32/6c/d2326cdc5de0b9c401308c7a10fb5cd8.jpg",
+    "images": [
+      "https://i.pinimg.com/1200x/a6/9e/32/a69e328183c9ddb78b729b1bd6103708.jpg",
+      "https://i.pinimg.com/736x/28/42/08/28420884bb652401c79ec617810fea92.jpg",
+      "https://i.pinimg.com/736x/c6/31/57/c631579a6ce0617c9ba0e9cf747edd07.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 4,
     "codigo": "SKV12325",
+    "sku": "PMS-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Pumas UNAM Local",
     "descripcion": "Uniforme local Pumas UNAM 2024, 100% poliéster ecológico, estampado durable.",
@@ -49,11 +101,28 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/2f/43/70/2f4370c1b12e95b6c7d368f21a962927.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/ad/7c/f7/ad7cf71fa088e04b1f0704a8b4cb8f15.jpg",
+      "https://i.pinimg.com/736x/f5/21/e3/f521e322d34e1087dad9ff5d39102631.jpg",
+      "https://i.pinimg.com/1200x/12/16/b4/1216b4ecdb370612f20280647e697257.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 5,
     "codigo": "SKB12335",
+    "sku": "RMD-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Real Madrid Local",
     "descripcion": "Conjunto entrenamiento Selección Mexicana 2024, ideal para uso diario y entrenamiento.",
@@ -62,11 +131,28 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/f8/4c/e3/f84ce356c72f57372a899c2b391b8c9d.jpg",
+    "images": [
+      "https://i.pinimg.com/1200x/c7/a3/da/c7a3da8a66ca17d018746dae86d05b51.jpg",
+      "https://i.pinimg.com/736x/8f/f3/23/8ff323e835f1c0f1c8c9ab7b78a6c832.jpg",
+      "https://i.pinimg.com/736x/bc/dc/6d/bcdc6d3cda51e10d643eee06947c7c5e.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 6,
     "codigo": "SKN12341",
+    "sku": "BRC-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Barcelona Local",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
@@ -75,24 +161,58 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/a9/51/c2/a951c293a8d49e72c383e30aac395324.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/05/df/70/05df70996b90a4e2cf7b97a7b91a8ad0.jpg",
+      "https://i.pinimg.com/1200x/ca/6e/81/ca6e817835dbd7566b636abd2e794241.jpg",
+      "https://i.pinimg.com/736x/74/2d/5f/742d5f8faf6452af06be5ca85d0e8049.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 7,
     "codigo": "SKM12342",
+    "sku": "PMS-VST-2024-002",
     "categoria": "FÚTBOL SOCCER",
-    "equipo": "Uniforme Club Pumas UNAM Local",
+    "equipo": "Uniforme Club Pumas UNAM Visitante",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
     "precio": 700,
     "moneda": "MXM",
     "genero": "Hombre",
     "nombreSubCategoria": "Futbol 7",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/2f/43/70/2f4370c1b12e95b6c7d368f21a962927.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/ad/7c/f7/ad7cf71fa088e04b1f0704a8b4cb8f15.jpg",
+      "https://i.pinimg.com/736x/f5/21/e3/f521e322d34e1087dad9ff5d39102631.jpg",
+      "https://i.pinimg.com/1200x/12/16/b4/1216b4ecdb370612f20280647e697257.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 8,
     "codigo": "SKA12343",
+    "sku": "BYN-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Bayern Munchen Local",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
@@ -101,11 +221,28 @@
     "genero": "Mujer",
     "nombreSubCategoria": "Femenil",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/15/90/66/159066bc9bfad4644bff4f1f81d0088c.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/f1/3e/82/f13e8276db4c65990ab7c089239c8872.jpg",
+      "https://i.pinimg.com/736x/e4/78/ff/e478ff05995a9e45566fd8cc8a0eeed4.jpg",
+      "https://i.pinimg.com/736x/6d/eb/0c/6deb0c9a9683b14b04a57ceb45e7d495.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 9,
     "codigo": "SKD12349",
+    "sku": "MUN-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Manchester United Local",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
@@ -114,37 +251,88 @@
     "genero": "Mujer",
     "nombreSubCategoria": "Femenil",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/3a/c6/8f/3ac68fd4a2505da338b309eb8db3ff06.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/3a/e6/e0/3ae6e0e5f6a508ff9d6b21baaf66a72f.jpg",
+      "https://i.pinimg.com/736x/ec/dc/b5/ecdcb5103bb09a99b00f0d1f1d2154ce.jpg",
+      "https://i.pinimg.com/736x/34/7d/23/347d23f11a71b96b47bc5088c191d92a.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 10,
     "codigo": "SKF12348",
+    "sku": "LVP-VIS-2024-002",
     "categoria": "FÚTBOL SOCCER",
-    "equipo": "Uniforme Club Liverpool Local",
+    "equipo": "Uniforme Club Liverpool Visitante",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
     "precio": 1000,
     "moneda": "MXM",
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/e0/16/50/e0165039fb351c140e8fd3b4b841cb20.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/12/2d/de/122dde775b635dd14c3883d32047d606.jpg",
+      "https://i.pinimg.com/736x/d5/56/48/d55648937458f5fb1afe2b70386a8786.jpg",
+      "https://i.pinimg.com/1200x/b6/9d/39/b69d39220f589968ed1830c4779f5020.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 11,
     "codigo": "SKG12347",
+    "sku": "MOT-VIS-2024-002",
     "categoria": "FÚTBOL SOCCER",
-    "equipo": "Uniforme Club Monterrey Local",
+    "equipo": "Uniforme Club Monterrey Visitante",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
     "precio": 1100,
     "moneda": "MXM",
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/35/e9/c9/35e9c9f528a4f5c664860aac19d35637.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/1b/a9/7b/1ba97bed3ae2816e25e973b0f50d6003.jpg",
+      "https://i.pinimg.com/736x/3a/38/a0/3a38a035105c444352a04ab812a602b8.jpg",
+      "https://i.pinimg.com/1200x/18/34/c6/1834c6735ad2733492cc1e23f16f829d.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 12,
     "codigo": "SKH12346",
+    "sku": "ATM-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Atletico de Madrid Local",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
@@ -153,11 +341,28 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Futbol 7",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/736x/08/aa/53/08aa53b83a60cb8dd68a1f4c67db7692.jpg",
+    "images": [
+      "https://i.pinimg.com/736x/99/63/e6/9963e6e85476d3ef0c596e6b925b89a5.jpg",
+      "https://i.pinimg.com/736x/60/10/71/6010719c63686cab529da0dd4e3aee6c.jpg",
+      "https://i.pinimg.com/1200x/26/3c/5d/263c5d7350a467b0307f5e5d30f3c0ff.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   },
   {
     "id": 13,
     "codigo": "SKJ22345",
+    "sku": "JVT-LCL-2024-002",
     "categoria": "FÚTBOL SOCCER",
     "equipo": "Uniforme Club Juventus Local",
     "descripcion": "Uniforme Wolverhampton Visita 21-22 con diseño sublimado y acabado profesional.",
@@ -166,6 +371,22 @@
     "genero": "Hombre",
     "nombreSubCategoria": "Profesional",
     "cantidad": 1,
-    "image": "https://i.pinimg.com/736x/fd/8b/f0/fd8bf08ee3504779a9b19ab038081574.jpg"
+    "image": "https://i.pinimg.com/1200x/ca/85/25/ca85252ed1a0638680e5b78d68d7595d.jpg",
+    "images": [
+      "https://i.pinimg.com/1200x/b4/ce/02/b4ce0212b40497b1bace77a7f19a7012.jpg",
+      "https://i.pinimg.com/1200x/e8/78/dd/e878ddd7069e4731941be10da78f4de6.jpg",
+      "https://i.pinimg.com/736x/0f/fb/b8/0ffbb8780026ee18e286a993dae2cb50.jpg"
+    ],
+    "specifications": {
+      "material": "100% poliéster transpirable",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "features": [
+        "Ajuste ergonómico",
+        "Tecnología transpirable",
+        "Costuras reforzadas",
+        "Tratamiento antimicrobiano"
+      ],
+      "colors": "Blanco con detalles azules"
+    }
   }
 ]
