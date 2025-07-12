@@ -1,18 +1,32 @@
 "use client";
 import Image from "next/image";
-import { UniformProps } from "../Types/uniforms"; // Asegúrate de importar el tipo correct
+import { useRouter } from "next/navigation";
+import { UniformProps } from "../Types/uniforms";
 
 const UniformLib: React.FC<UniformProps> = ({
   id,
+  slug,
   categoria,
   descripcion,
   precio,
   image,
 }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/Producto/${slug}`);
+  };
+
+  const handleComprar = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Evita que se ejecute el onClick del div padre
+    router.push(`/Producto/${slug}`);
+  };
+
   return (
     <div
       key={id}
-      className="border rounded-lg shadow-md p-4 bg-white w-full max-w-xs flex-shrink-0"
+      className="border rounded-lg shadow-md p-4 bg-white w-full max-w-xs flex-shrink-0 cursor-pointer hover:shadow-lg transition-shadow duration-200"
+      onClick={handleClick}
     >
       <Image
         src={image}
@@ -27,7 +41,10 @@ const UniformLib: React.FC<UniformProps> = ({
       <p className="text-gray-700 text-sm mb-4">{descripcion}</p>
       <div className="flex justify-between items-center">
         <span className="text-green-700 font-semibold">${precio} MXN</span>
-        <button className="bg-[#190E46] text-white px-4 py-2 rounded hover:bg-indigo-800 text-sm">
+        <button
+          className="bg-[#190E46] text-white px-4 py-2 rounded hover:bg-indigo-800 text-sm transition-colors duration-200"
+          onClick={handleComprar}
+        >
           Comprar
         </button>
       </div>

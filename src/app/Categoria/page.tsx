@@ -4,6 +4,7 @@ import { Grid, List } from "lucide-react";
 import { UniformProps } from "@/Types/uniforms";
 import Image from "next/image";
 import data from "../../../public/data/uniformes-futbol.json";
+import { useRouter } from "next/navigation";
 
 const CatalogoVista: React.FC<UniformProps> = () => {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
@@ -12,6 +13,17 @@ const CatalogoVista: React.FC<UniformProps> = () => {
   const [precioMin, setPrecioMin] = useState<number | "">(0);
   const [precioMax, setPrecioMax] = useState<number | "">("");
   const [orden, setOrden] = useState("default");
+
+  const router = useRouter();
+
+  const handleClick = (slug: string) => {
+    router.push(`/Producto/${slug}`);
+  };
+
+  const handleComprar = (e: React.MouseEvent, slug: string) => {
+    e.stopPropagation();
+    router.push(`/Producto/${slug}`);
+  };
 
   const subcategorias = useMemo(() => {
     return [
@@ -167,7 +179,8 @@ const CatalogoVista: React.FC<UniformProps> = () => {
             viewMode === "grid" ? (
               <div
                 key={item.id}
-                className="border rounded-lg shadow-md p-4 bg-white w-full max-w-xs flex-shrink-0"
+                className="border hover:cursor-pointer rounded-lg shadow-md p-4 bg-white w-full max-w-xs flex-shrink-0"
+                onClick={() => handleClick(item.slug)}
               >
                 <Image
                   src={item.image}
@@ -185,7 +198,10 @@ const CatalogoVista: React.FC<UniformProps> = () => {
                   <span className="text-green-700 font-semibold">
                     ${item.precio} {item.moneda}
                   </span>
-                  <button className="bg-[#190E46] text-white px-4 py-2 rounded hover:bg-indigo-800 text-sm">
+                  <button
+                    onClick={(e) => handleComprar(e, item.slug)}
+                    className="bg-[#190E46] text-white px-4 py-2 rounded hover:bg-indigo-800 text-sm"
+                  >
                     Comprar
                   </button>
                 </div>
