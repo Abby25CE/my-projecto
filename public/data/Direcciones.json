@@ -6,6 +6,8 @@
     "numero": 78,
     "referencia": "Casa Blanca con portones azules, segunda casa empezando el empedrado",
     "ciudad": "La Piedad",
+    "municipio": "La Piedad",
+    "colonia": "Ciudad del sol",
     "estado": "Michoacan",
     "cp": 59310
   },
@@ -16,6 +18,8 @@
     "numero": 120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
+    "municipio": "La Piedad",
+    "colonia": "Ciudad del sol",
     "estado": "Michoacan",
     "cp": 58120
   },
@@ -26,6 +30,8 @@
     "numero": 120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
+    "municipio": "La Piedad",
+    "colonia": "Ciudad del sol",
     "estado": "Michoacan",
     "cp": 58120
   },
@@ -36,6 +42,8 @@
     "numero": 120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
+    "municipio": "La Piedad",
+    "colonia": "Ciudad del sol",
     "estado": "Michoacan",
     "cp": 58120
   },
@@ -46,6 +54,8 @@
     "numero": 120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
+    "municipio": "La Piedad",
+    "colonia": "Ciudad del sol",
     "estado": "Michoacan",
     "cp": 58120
   }
