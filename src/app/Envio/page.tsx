@@ -1,18 +1,58 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../../../public/data/Direcciones.json";
+
+interface Producto {
+  id: number;
+  equipo: string;
+  precio: number;
+  cantidad: number;
+}
+
+interface Direccion {
+  nombre: string;
+  direccion: string;
+  numero: number;
+  ciudad: string;
+  estado: string;
+  cp: number;
+}
+
+interface ResumenPedido {
+  productos: Producto[];
+  equipo: string;
+  subtotal: number;
+  envio: number;
+  total: number;
+  comentario: string;
+  direccion?: Direccion;
+}
 
 const EnvioFormulario = () => {
   const [comentario, setComentario] = useState("");
   const [step, setStep] = useState(1);
   const [metodoSeleccionado, setMetodoSeleccionado] = useState("opcion1");
+  const [resumen, setResumen] = useState<ResumenPedido | null>(null);
+
+  useEffect(() => {
+    const data = localStorage.getItem("resumenPedido");
+    if (data) {
+      const parsed = JSON.parse(data);
+      setResumen(parsed);
+      setComentario(parsed.comentario || "");
+    }
+  }, []);
+
+  if (!resumen) return null;
+
+  const { productos, subtotal, envio, total } = resumen;
 
   const nextStep = () => setStep((prev) => Math.min(prev + 1, 3));
   const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
 
-  const direccionId = 10;
+  const direccionId = 20;
 
-  // Filtrar solo la dirección con id = 2
+  // Filtrar solo la dirección con id = N
   const direccion = data.find((dir) => dir.id === direccionId);
 
   if (!direccion) {
@@ -220,72 +260,110 @@ const EnvioFormulario = () => {
             RESUMEN DEL PEDIDO
           </h3>
 
-          <div className="text-sm text-gray-700 space-y-1 mb-3">
-            <div className="flex justify-between">
-              <span>Producto 1</span>
-              <span>$100</span>
+          {/* Productos */}
+          <div className="text-sm text-gray-700 space-y-4 mb-3">
+            {/* Subtotal y envío */}
+            <div className="space-y-2"></div>
+
+            {/* Productos */}
+            <div className="space-y-2">
+              {productos.map((p) => (
+                <div
+                  key={p.id}
+                  className="flex justify-between items-center border-b pb-2"
+                >
+                  <div className="flex flex-col">
+                    <span className="font-medium text-[#190E46]">
+                      {p.equipo}
+                    </span>
+                    <span className="text-xs text-gray-500">
+                      Cantidad: {p.cantidad}
+                    </span>
+                  </div>
+                  <span className="text-sm font-semibold text-green-700">
+                    ${p.precio * p.cantidad}
+                  </span>
+                </div>
+              ))}
             </div>
-            <div className="flex justify-between">
-              <span>Producto 2</span>
-              <span>$200</span>
+
+            <hr className="my-2 border-gray-300" />
+            <div className="flex justify-between items-center border-b pb-1">
+              <span className="text-gray-600">Subtotal</span>
+              <span className="text-sm font-semibold text-green-700">
+                ${subtotal}
+              </span>
             </div>
-            <hr />
-            <div className="flex justify-between font-semibold">
+            <div className="flex justify-between items-center border-b pb-1">
+              <span className="text-gray-600">Envío</span>
+              <span className="text-sm font-semibold text-blue-600">
+                ${envio}
+              </span>
+            </div>
+            {/* Total final */}
+            <div className="flex justify-between font-semibold text-base text-[#190E46]">
               <span>Total:</span>
-              <span>$300</span>
+              <span>${total}</span>
             </div>
           </div>
 
+          {/* Comentario solo en Step 1 */}
           {step === 1 && (
             <textarea
               placeholder="Agregar un Comentario"
               className="w-full p-2 border rounded resize-none"
               rows={4}
               value={comentario}
-              onChange={(e) => setComentario(e.target.value)}
+              onChange={(e) => {
+                setComentario(e.target.value);
+                // Actualizar localStorage también si deseas
+                const actualizado = { ...resumen, comentario: e.target.value };
+                setResumen(actualizado);
+                localStorage.setItem(
+                  "resumenPedido",
+                  JSON.stringify(actualizado)
+                );
+              }}
             />
           )}
-          {step >= 2 && (
+
+          {/* Dirección de Envío si ya está disponible */}
+          {step >= 2 && direccion && (
             <div className="space-y-3.5">
               <div className="bg-white p-4 rounded-t-xl border h-fit">
                 <h3 className="text-lg font-bold mb-4 border-b pb-2">
                   📦 Detalles del envío
                 </h3>
-
                 <div className="space-y-2">
                   <div>
-                    <span className="font-medium text-gray-600">Nombre:</span>
+                    <span className="font-medium text-gray-600">Nombre: </span>
                     {direccion.nombre}
                   </div>
                   <div>
                     <span className="font-medium text-gray-600">
-                      Dirección:
+                      Dirección:{" "}
                     </span>
-                    {direccion.direccion}
+                    {direccion.direccion} #{direccion.numero}
                   </div>
                   <div>
-                    <span className="font-medium text-gray-600">Número:</span>
-                    {direccion.numero}
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-600">Ciudad:</span>
+                    <span className="font-medium text-gray-600">Ciudad: </span>
                     {direccion.ciudad}
                   </div>
                   <div>
-                    <span className="font-medium text-gray-600">Estado:</span>
+                    <span className="font-medium text-gray-600">Estado: </span>
                     {direccion.estado}
                   </div>
                   <div>
-                    <span className="font-medium text-gray-600">C.P.:</span>
+                    <span className="font-medium text-gray-600">C.P.: </span>
                     {direccion.cp}
                   </div>
                 </div>
               </div>
               <div className="bg-white p-4 rounded-b-xl border h-fit">
                 <h3 className="text-lg font-bold mb-4 border-b pb-2">
-                  📦 Detalles de la paqueteria
+                  📦 Detalles de la paquetería
                 </h3>
-                Tipo de Envio: Express
+                Tipo de Envío: Express
               </div>
             </div>
           )}
