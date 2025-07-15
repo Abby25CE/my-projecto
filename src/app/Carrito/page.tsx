@@ -2,18 +2,23 @@
 import { useEffect, useState } from "react";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import Image from "next/image";
-
-interface Producto {
-  id: number;
-  descripcion: string;
-  precio: number;
-  cantidad: number;
-  image: string;
-}
+import { UniformProps } from "@/Types/uniforms";
 
 export default function Cart() {
-  const [productos, setProductos] = useState<Producto[]>([]);
+  const [productos, setProductos] = useState<UniformProps[]>([]);
   const [comentario, setComentario] = useState("");
+
+  const handleContinuar = () => {
+    const resumen = {
+      productos,
+      subtotal,
+      envio,
+      total,
+      comentario,
+    };
+    localStorage.setItem("resumenPedido", JSON.stringify(resumen));
+    window.location.href = "/Envio";
+  };
 
   useEffect(() => {
     fetch("/data/uniformes-futbol.json")
@@ -66,9 +71,11 @@ export default function Cart() {
               {/* Info producto */}
               <div className="flex-1">
                 <h3 className="text-sm font-medium text-gray-800">
+                  {producto.equipo}
+                </h3>
+                <h3 className="text-sm font-medium text-gray-800">
                   {producto.descripcion}
                 </h3>
-
                 <div className="flex items-center text-[#190E46] gap-2 mt-2">
                   <span className="text-sm">Cantidad:</span>
                   <button onClick={() => actualizarCantidad(producto.id, -1)}>
@@ -117,7 +124,10 @@ export default function Cart() {
             </div>
           </div>
           <a href="/Envio">
-            <button className="mt-6 w-full bg-[#190E46] text-white rounded-full py-2 font-medium hover:bg-indigo-800">
+            <button
+              onClick={handleContinuar}
+              className="mt-6 w-full bg-[#190E46] text-white rounded-full py-2 font-medium hover:bg-indigo-800"
+            >
               CONTINUAR
             </button>
           </a>

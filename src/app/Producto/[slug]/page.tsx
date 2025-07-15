@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import data from "../../../../public/data/uniformes-futbol.json"; // Ajusta ruta si es necesario
+import data from "../../../../public/data/uniformes-futbol.json";
 import { UniformCarousel } from "@/containers/UniformCarousel";
 
 const Producto = () => {

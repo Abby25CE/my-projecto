@@ -20,3 +20,36 @@ export interface UniformProps {
     colors: string;
   };
 }
+
+export interface AddressData {
+  id?: number;
+  nombre: string;
+  calle: string;
+  numero: string;
+  referencia: string;
+  municipio: string;
+  curp: string;
+  correo: string;
+  telefono: string;
+  colonia: string;
+  ciudad: string;
+  estado: string;
+  cp: string;
+}
+
+export interface Producto {
+  id: number;
+  equipo: string;
+  precio: number;
+  cantidad: number;
+}
+
+export interface ResumenPedido {
+  productos: Producto[];
+  equipo: string;
+  subtotal: number;
+  envio: number;
+  total: number;
+  comentario: string;
+  direccion?: AddressData;
+}
