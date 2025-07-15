@@ -24,17 +24,17 @@ export interface UniformProps {
 export interface AddressData {
   id?: number;
   nombre: string;
-  direccion: string;
-  numero: number;
+  calle: string;
+  numero: string;
   referencia: string;
   municipio: string;
   curp: string;
   correo: string;
-  telefono: number;
+  telefono: string;
   colonia: string;
   ciudad: string;
   estado: string;
-  cp: number;
+  cp: string;
 }
 
 export interface Producto {
