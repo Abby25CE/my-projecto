@@ -2,61 +2,76 @@
   {
     "id": 10,
     "nombre": "Luz Elena Espinosa Baez",
+    "curp": "CEE250399HMNRSR01",
+    "correo": "lucy@gmail.com",
+    "telefono": 3521082211,
     "direccion": "Boulevard de las Galaxias",
     "numero": 78,
+    "cp": 59310,
     "referencia": "Casa Blanca con portones azules, segunda casa empezando el empedrado",
     "ciudad": "La Piedad",
     "municipio": "La Piedad",
     "colonia": "Ciudad del sol",
-    "estado": "Michoacan",
-    "cp": 59310
+    "estado": "Michoacan"
   },
   {
     "id": 20,
     "nombre": "Axel Daniel Martinez",
+    "curp": "REE250399HMNRSR02",
+    "correo": "axel@gmail.com",
+    "telefono": 3521082211,
     "direccion": "Ing heber Soto Fierro",
     "numero": 120,
+    "cp": 58120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
     "municipio": "La Piedad",
     "colonia": "Ciudad del sol",
-    "estado": "Michoacan",
-    "cp": 58120
+    "estado": "Michoacan"
   },
   {
     "id": 30,
     "nombre": "Luna Abigail Carrillo Espinosa",
+    "curp": "EEE250399HMNRSR03",
+    "correo": "luna@gmail.com",
+    "telefono": 3521082211,
     "direccion": "Ing heber Soto Fierro",
     "numero": 120,
+    "cp": 58120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
     "municipio": "La Piedad",
     "colonia": "Ciudad del sol",
-    "estado": "Michoacan",
-    "cp": 58120
+    "estado": "Michoacan"
   },
   {
     "id": 40,
     "nombre": "Juan Pablo Hernandez Correa",
+    "curp": "WEE250399HMNRSR04",
+    "correo": "juanpablo@gmail.com",
+    "telefono": 3521082211,
     "direccion": "Ing heber Soto Fierro",
     "numero": 120,
+    "cp": 58120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
     "municipio": "La Piedad",
     "colonia": "Ciudad del sol",
-    "estado": "Michoacan",
-    "cp": 58120
+    "estado": "Michoacan"
   },
   {
     "id": 50,
     "nombre": "Denisse Ortiz Martinez",
+    "curp": "QEE250399HMNRSR05",
+    "correo": "denise@gmail.com",
+    "telefono": 3521082211,
     "direccion": "Ing heber Soto Fierro",
     "numero": 120,
+    "cp": 58120,
     "referencia": "Departamentos el oasis",
     "ciudad": "Morelia",
     "municipio": "La Piedad",
     "colonia": "Ciudad del sol",
-    "estado": "Michoacan",
-    "cp": 58120
+    "estado": "Michoacan"
   }
 ]
