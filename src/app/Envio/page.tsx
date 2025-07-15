@@ -1,38 +1,27 @@
 "use client";
 import { useEffect, useState } from "react";
 import data from "../../../public/data/Direcciones.json";
-
-interface Producto {
-  id: number;
-  equipo: string;
-  precio: number;
-  cantidad: number;
-}
-
-interface Direccion {
-  nombre: string;
-  direccion: string;
-  numero: number;
-  ciudad: string;
-  estado: string;
-  cp: number;
-}
-
-interface ResumenPedido {
-  productos: Producto[];
-  equipo: string;
-  subtotal: number;
-  envio: number;
-  total: number;
-  comentario: string;
-  direccion?: Direccion;
-}
+import { useSearchParams } from "next/navigation";
+import { AddressData, ResumenPedido } from "@/Types/uniforms";
 
 const EnvioFormulario = () => {
   const [comentario, setComentario] = useState("");
   const [step, setStep] = useState(1);
   const [metodoSeleccionado, setMetodoSeleccionado] = useState("opcion1");
   const [resumen, setResumen] = useState<ResumenPedido | null>(null);
+  const searchParams = useSearchParams();
+  const [direcciones, setDirecciones] = useState<AddressData | null>(null);
+  const [nombre, setNombre] = useState("");
+  const [curp, setCurp] = useState("");
+  const [correo, setCorreo] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [calle, setCalle] = useState("");
+  const [numero, setNumero] = useState("");
+  const [cp, setCp] = useState("");
+  const [colonia, setColonia] = useState("");
+  const [municipio, setMunicipio] = useState("");
+  const [ciudad, setCiudad] = useState("");
+  const [estado, setEstado] = useState("");
 
   useEffect(() => {
     const data = localStorage.getItem("resumenPedido");
@@ -40,6 +29,31 @@ const EnvioFormulario = () => {
       const parsed = JSON.parse(data);
       setResumen(parsed);
       setComentario(parsed.comentario || "");
+    }
+
+    // Verificamos si hay una dirección pasada por query param
+    const direccionEdit = searchParams.get("edit");
+    if (direccionEdit) {
+      try {
+        const direccionDecodificada = JSON.parse(
+          decodeURIComponent(direccionEdit)
+        );
+        setDirecciones(direccionDecodificada);
+        // Precarga campos
+        setNombre(direccionDecodificada.nombre || "");
+        setCurp(direccionDecodificada.curp || "");
+        setCorreo(direccionDecodificada.correo || "");
+        setTelefono(direccionDecodificada.telefono || "");
+        setCalle(direccionDecodificada.direccion || "");
+        setNumero(direccionDecodificada.numero || "");
+        setCp(direccionDecodificada.cp || "");
+        setColonia(direccionDecodificada.colonia || "");
+        setMunicipio(direccionDecodificada.municipio || "");
+        setCiudad(direccionDecodificada.ciudad || "");
+        setEstado(direccionDecodificada.estado || "");
+      } catch (err) {
+        console.error("Error al decodificar dirección:", err);
+      }
     }
   }, []);
 
@@ -49,15 +63,6 @@ const EnvioFormulario = () => {
 
   const nextStep = () => setStep((prev) => Math.min(prev + 1, 3));
   const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
-
-  const direccionId = 20;
-
-  // Filtrar solo la dirección con id = N
-  const direccion = data.find((dir) => dir.id === direccionId);
-
-  if (!direccion) {
-    return <p className="text-red-500">Dirección no encontrada.</p>;
-  }
 
   return (
     <section className="max-w-6xl mx-auto p-6">
@@ -93,22 +98,30 @@ const EnvioFormulario = () => {
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)}
                   placeholder="Nombre"
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
                 <input
                   type="text"
-                  placeholder="RFC"
+                  placeholder="RFC/CURP"
+                  value={curp}
+                  onChange={(e) => setCurp(e.target.value)}
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
                 <input
                   type="email"
+                  value={correo}
                   placeholder="Email"
+                  onChange={(e) => setCorreo(e.target.value)}
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
                 <input
                   type="tel"
                   placeholder="Teléfono"
+                  value={telefono}
+                  onChange={(e) => setTelefono(e.target.value)}
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
                 <input
@@ -123,10 +136,14 @@ const EnvioFormulario = () => {
                 <input
                   type="text"
                   placeholder="Calle"
+                  value={calle}
+                  onChange={(e) => setCalle(e.target.value)}
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
                 <div className="flex gap-5">
                   <input
+                    onChange={(e) => setNumero(e.target.value)}
+                    value={numero}
                     type="text"
                     placeholder="Número*"
                     className="w-full px-3 py-2 border rounded text-sm text-gray-700"
@@ -137,26 +154,49 @@ const EnvioFormulario = () => {
                     className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                   />
                   <input
+                    value={cp}
+                    onChange={(e) => setCp(e.target.value)}
                     type="text"
                     placeholder="Código Postal"
+                    className="w-full px-3 py-2 border rounded text-sm text-gray-700"
+                  />
+                </div>
+                <div className="flex gap-5">
+                  <input
+                    type="text"
+                    value={colonia}
+                    onChange={(e) => setColonia(e.target.value)}
+                    placeholder="Colonia"
+                    className="w-full px-3 py-2 border rounded text-sm text-gray-700"
+                  />
+                  <input
+                    type="text"
+                    onChange={(e) => setMunicipio(e.target.value)}
+                    value={municipio}
+                    placeholder="Municipio"
+                    className="w-full px-3 py-2 border rounded text-sm text-gray-700"
+                  />
+                </div>
+                <div className="flex gap-5">
+                  <input
+                    type="text"
+                    placeholder="Ciudad"
+                    value={ciudad}
+                    onChange={(e) => setCiudad(e.target.value)}
+                    className="w-full px-3 py-2 border rounded text-sm text-gray-700"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Estado"
+                    onChange={(e) => setEstado(e.target.value)}
+                    value={estado}
                     className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                   />
                 </div>
 
                 <input
                   type="text"
-                  placeholder="Colonia / Delegación"
-                  className="w-full px-3 py-2 border rounded text-sm text-gray-700"
-                />
-                <input
-                  type="text"
-                  placeholder="Ciudad / Estado"
-                  className="w-full px-3 py-2 border rounded text-sm text-gray-700"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Nombre de la dirección (ej. Casa)"
+                  placeholder="Referencia de la dirección (ej. Casa)"
                   className="w-full px-3 py-2 border rounded text-sm text-gray-700"
                 />
               </div>
@@ -328,7 +368,7 @@ const EnvioFormulario = () => {
           )}
 
           {/* Dirección de Envío si ya está disponible */}
-          {step >= 2 && direccion && (
+          {step >= 2 && (
             <div className="space-y-3.5">
               <div className="bg-white p-4 rounded-t-xl border h-fit">
                 <h3 className="text-lg font-bold mb-4 border-b pb-2">
@@ -337,25 +377,31 @@ const EnvioFormulario = () => {
                 <div className="space-y-2">
                   <div>
                     <span className="font-medium text-gray-600">Nombre: </span>
-                    {direccion.nombre}
+                    {nombre}
                   </div>
                   <div>
                     <span className="font-medium text-gray-600">
                       Dirección:{" "}
                     </span>
-                    {direccion.direccion} #{direccion.numero}
+                    {calle} #{numero} {colonia}
                   </div>
                   <div>
                     <span className="font-medium text-gray-600">Ciudad: </span>
-                    {direccion.ciudad}
+                    {ciudad}
+                  </div>
+                  <div>
+                    <span className="font-medium text-gray-600">
+                      Municipio:{" "}
+                    </span>
+                    {municipio}
                   </div>
                   <div>
                     <span className="font-medium text-gray-600">Estado: </span>
-                    {direccion.estado}
+                    {estado}
                   </div>
                   <div>
                     <span className="font-medium text-gray-600">C.P.: </span>
-                    {direccion.cp}
+                    {cp}
                   </div>
                 </div>
               </div>

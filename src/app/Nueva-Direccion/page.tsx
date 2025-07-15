@@ -2,19 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-
-interface AddressData {
-  id?: number;
-  nombre: string;
-  direccion: string;
-  numero: number;
-  referencia: string;
-  municipio: string;
-  colonia: string;
-  ciudad: string;
-  estado: string;
-  cp: number;
-}
+import { AddressData } from "@/Types/uniforms";
 
 export default function NuevaDireccion() {
   const [direccionPrincipal, setDireccionPrincipal] = useState(false);

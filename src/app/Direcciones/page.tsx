@@ -2,32 +2,26 @@
 import { Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
-interface AddressesProps {
-  id: number;
-  nombre: string;
-  direccion: string;
-  numero: number;
-  referencia: string;
-  municipio: string;
-  colonia: string;
-  ciudad: string;
-  estado: string;
-  cp: number;
-}
+import { AddressData } from "@/Types/uniforms";
 
 const Addresses: React.FC = () => {
-  const [direcciones, setdirecciones] = useState<AddressesProps[]>([]);
+  const [direcciones, setdirecciones] = useState<AddressData[]>([]);
   const router = useRouter();
 
   const eliminarProducto = (id: number) => {
     setdirecciones((prev) => prev.filter((p) => p.id !== id));
   };
 
-  const modificarDireccion = (direccion: AddressesProps) => {
+  const modificarDireccion = (direccion: AddressData) => {
     // Convertir el objeto a string para pasarlo como parámetro de URL
     const direccionString = encodeURIComponent(JSON.stringify(direccion));
     router.push(`/Nueva-Direccion?edit=${direccionString}`);
+  };
+
+  const handleUsar = (direccion: AddressData) => {
+    // Convertir el objeto a string para pasarlo como parámetro de URL
+    const direccionString = encodeURIComponent(JSON.stringify(direccion));
+    router.push(`/Envio?edit=${direccionString}`);
   };
 
   useEffect(() => {
@@ -59,7 +53,7 @@ const Addresses: React.FC = () => {
           >
             {/* Header */}
             <div className="text-lg font-bold bg-[#190E46] text-white rounded-full py-1 px-4 w-fit mb-4">
-              {dire.nombre}
+              <h1>{dire.nombre}</h1>
             </div>
             {/* Dirección */}
             <div className="space-y-1 text-sm font-medium">
@@ -77,7 +71,13 @@ const Addresses: React.FC = () => {
             {/* Acciones */}
             <div className="flex justify-between items-center mt-5">
               <button
-                onClick={() => eliminarProducto(dire.id)}
+                onClick={() => handleUsar(dire)}
+                className="bg-[#190E46] text-white text-sm px-4 py-2 rounded-full hover:bg-indigo-800"
+              >
+                Usar
+              </button>{" "}
+              <button
+                onClick={() => eliminarProducto(dire.id!)}
                 className="text-red-600 hover:underline flex items-center gap-1 text-sm"
               >
                 <Trash2 size={16} /> Eliminar
