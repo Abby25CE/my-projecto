@@ -1,6 +1,7 @@
 "use client";
 import { Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface AddressesProps {
   id: number;
@@ -8,16 +9,25 @@ interface AddressesProps {
   direccion: string;
   numero: number;
   referencia: string;
+  municipio: string;
+  colonia: string;
   ciudad: string;
   estado: string;
   cp: number;
 }
 
-const Addresses: React.FC<AddressesProps> = () => {
+const Addresses: React.FC = () => {
   const [direcciones, setdirecciones] = useState<AddressesProps[]>([]);
+  const router = useRouter();
 
   const eliminarProducto = (id: number) => {
     setdirecciones((prev) => prev.filter((p) => p.id !== id));
+  };
+
+  const modificarDireccion = (direccion: AddressesProps) => {
+    // Convertir el objeto a string para pasarlo como parámetro de URL
+    const direccionString = encodeURIComponent(JSON.stringify(direccion));
+    router.push(`/Nueva-Direccion?edit=${direccionString}`);
   };
 
   useEffect(() => {
@@ -40,7 +50,6 @@ const Addresses: React.FC<AddressesProps> = () => {
           + Nueva Dirección
         </a>
       </div>
-
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {direcciones.map((dire) => (
@@ -52,7 +61,6 @@ const Addresses: React.FC<AddressesProps> = () => {
             <div className="text-lg font-bold bg-[#190E46] text-white rounded-full py-1 px-4 w-fit mb-4">
               {dire.nombre}
             </div>
-
             {/* Dirección */}
             <div className="space-y-1 text-sm font-medium">
               <div className="flex justify-between">
@@ -66,7 +74,6 @@ const Addresses: React.FC<AddressesProps> = () => {
               </div>
               <div className="text-gray-500">{dire.referencia}</div>
             </div>
-
             {/* Acciones */}
             <div className="flex justify-between items-center mt-5">
               <button
@@ -75,7 +82,10 @@ const Addresses: React.FC<AddressesProps> = () => {
               >
                 <Trash2 size={16} /> Eliminar
               </button>
-              <button className="bg-[#190E46] text-white text-sm px-4 py-2 rounded-full hover:bg-indigo-800">
+              <button
+                onClick={() => modificarDireccion(dire)}
+                className="bg-[#190E46] text-white text-sm px-4 py-2 rounded-full hover:bg-indigo-800"
+              >
                 Modificar
               </button>
             </div>
