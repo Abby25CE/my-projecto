@@ -59,7 +59,7 @@ const Addresses: React.FC = () => {
             <div className="space-y-1 text-sm font-medium">
               <div className="flex justify-between">
                 <span>
-                  {dire.direccion} #{dire.numero}
+                  {dire.calle} #{dire.numero}
                 </span>
                 <span>{dire.cp}</span>
               </div>
