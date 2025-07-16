@@ -36,9 +36,9 @@ export default function NuevaDireccion() {
         setFormData({
           nombre: direccionData.nombre || "",
           pais: "México",
-          cp: direccionData.cp || "",
-          calle: direccionData.calle || "",
-          numeroExterior: direccionData.numero || "",
+          cp: direccionData.cp?.toString() || "",
+          calle: direccionData.direccion || "",
+          numeroExterior: direccionData.numero?.toString() || "",
           numeroInterior: "",
           referencia: direccionData.referencia || "",
           colonia: direccionData.colonia || "",
