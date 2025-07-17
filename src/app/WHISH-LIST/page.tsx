@@ -68,7 +68,7 @@ const WishList = () => {
               alt={producto.descripcion}
               width={300}
               height={300}
-              className="object-contain h-auto w-auto max-h-[220px] border-2 ml-7 rounded-2xl shadow-sm"
+              className="object-contain h-auto w-auto max-h-[110px] md:max-h-[220px] border-2 ml-7 rounded-2xl shadow-sm"
             />
 
             {/* Info */}
