@@ -36,6 +36,14 @@ const Navbar: FC = () => {
           >
             <Menu className="w-6 h-6" />
           </button>
+          <div className="flex gap-5 md:hidden">
+            <a href="/Carrito">
+              <ShoppingCart className="w-6 h-6 text-gray-800" />
+            </a>
+            <a href="/WHISH-LIST">
+              <FaRegHeart className="w-6 h-6 text-gray-800" />
+            </a>
+          </div>
         </div>
 
         {/* Links + Search + Cart */}
