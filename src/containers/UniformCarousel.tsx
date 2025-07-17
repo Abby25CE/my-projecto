@@ -49,7 +49,7 @@ export const UniformCarousel: React.FC<UniformCarouselProps> = ({
         <div className="text-center ">
           <a
             href="/Categoria"
-            className="inline-flex items-center gap-2 text-[#190E46] font-semibold mt-5 rounded-lg hover:bg-indigo-800 transition-colors duration-200 "
+            className="inline-flex items-center gap-2 text-[#190E46] font-semibold mt-5 rounded-lg px-3 hover:text-white hover:bg-indigo-800 transition-colors duration-200 "
           >
             Ver mas
             <ChevronRight className="w-4 h-4" />

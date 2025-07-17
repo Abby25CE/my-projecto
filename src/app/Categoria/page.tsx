@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 const CatalogoVista: React.FC<UniformProps> = () => {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [selectedSubcategoria, setSelectedSubcategoria] = useState("Todas");
-  const [selectedGenero, setSelectedGenero] = useState("Sexo");
+  const [selectedGenero, setSelectedGenero] = useState("Genero");
   const [precioMin, setPrecioMin] = useState<number | "">(0);
   const [precioMax, setPrecioMax] = useState<number | "">("");
   const [orden, setOrden] = useState("default");
@@ -33,7 +33,7 @@ const CatalogoVista: React.FC<UniformProps> = () => {
   }, [data]);
 
   const generos = useMemo(() => {
-    return ["Sexo", ...Array.from(new Set(data.map((item) => item.genero)))];
+    return ["Genero", ...Array.from(new Set(data.map((item) => item.genero)))];
   }, [data]);
 
   const productosFiltrados = useMemo(() => {
@@ -45,7 +45,7 @@ const CatalogoVista: React.FC<UniformProps> = () => {
       );
     }
 
-    if (selectedGenero !== "Sexo") {
+    if (selectedGenero !== "Genero") {
       filtrados = filtrados.filter((item) => item.genero === selectedGenero);
     }
 
@@ -72,7 +72,7 @@ const CatalogoVista: React.FC<UniformProps> = () => {
   const resetFiltros = () => {
     setSelectedSubcategoria("Todas");
     setPrecioMin(0);
-    setSelectedGenero("Sexo");
+    setSelectedGenero("Genero");
     setPrecioMax("");
     setOrden("default");
   };
