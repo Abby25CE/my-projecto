@@ -100,7 +100,7 @@ const EnvioFormulario = () => {
       maxLength: 100,
     },
     terminosAceptados: {
-      custom: (value) => {
+      custom: () => {
         if (!terminosAceptados) {
           return "Debes aceptar los términos y condiciones";
         }
