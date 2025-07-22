@@ -4,10 +4,11 @@ import CategoryFilters from "@/containers/Category";
 import ProductCard from "@/containers/ProductCard";
 import { UniformCarousel } from "@/containers/UniformCarousel";
 import data from "../../public/data/uniformes-futbol.json";
+import Pay from "@/containers/Pay";
 
 export default function Home() {
   return (
-    <div className="pb-10">
+    <div className="">
       <Carrusel />
       <ProductCard
         title="Kingo Sport CONJUNTO de Futbol Wolverhamton Visita 21-22"
@@ -18,6 +19,7 @@ export default function Home() {
       <CategoryFilters />
       <UniformCarousel uniforms={data} />
       <UniformCarousel uniforms={data} />
+      <Pay />
     </div>
   );
 }
