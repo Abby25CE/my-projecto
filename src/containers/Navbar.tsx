@@ -16,7 +16,7 @@ const Navbar: FC = () => {
         <a href="/Seguimiento" className="hover:underline">
           Seguimiento de pedidos
         </a>
-        <a href="#" className="hover:underline font-semibold text-blue-900">
+        <a href="Login" className="hover:underline font-semibold text-blue-900">
           Iniciar sesión
         </a>
       </div>
