@@ -15,7 +15,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className=" py-10 mt-12 px-1 ">
+    <footer className="  px-1 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 px-7 py-5 gap-4">
         {/* Teléfono */}
         <div className="flex flex-col text-white ">

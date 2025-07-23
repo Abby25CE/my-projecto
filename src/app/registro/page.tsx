@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { FaGoogle, FaFacebook, FaApple, FaMicrosoft } from "react-icons/fa";
 

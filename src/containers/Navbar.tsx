@@ -13,10 +13,19 @@ const Navbar: FC = () => {
     <header className="w-full border-b bg-white shadow-sm">
       {/* Top mini-bar */}
       <div className="hidden sm:flex justify-end text-sm px-4 py-1 space-x-4 text-gray-600">
+        <a href="/Diseños" className="hover:underline">
+          Mis diseños
+        </a>
+        <a href="/Direcciones" className="hover:underline">
+          Mis Direcciones
+        </a>
         <a href="/Seguimiento" className="hover:underline">
           Seguimiento de pedidos
         </a>
-        <a href="Login" className="hover:underline font-semibold text-blue-900">
+        <a
+          href="/Login"
+          className="hover:underline font-semibold text-blue-900"
+        >
           Iniciar sesión
         </a>
       </div>
