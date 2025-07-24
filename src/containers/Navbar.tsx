@@ -13,7 +13,7 @@ const Navbar: FC = () => {
     <header className="w-full border-b bg-white shadow-sm">
       {/* Top mini-bar */}
       <div className="hidden sm:flex justify-end text-sm px-4 py-1 space-x-4 text-gray-600">
-        <a href="/Diseños" className="hover:underline">
+        <a href="/Mis-Disenos" className="hover:underline">
           Mis diseños
         </a>
         <a href="/Direcciones" className="hover:underline">
