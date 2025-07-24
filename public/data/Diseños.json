@@ -1,0 +1,57 @@
+[
+  {
+    "id": 100,
+    "nombre": "Tala Rangel",
+    "equipo": "Guadalajara",
+    "posion": "Delantero",
+    "cuello": "Cuello Polo",
+    "numero": "23",
+    "accesorio": "Calcetas",
+    "idea": "Degradado de arriba a abajo",
+    "patrocinadores": "Lala"
+  },
+  {
+    "id": 200,
+    "nombre": "Pollo Rodriguez",
+    "equipo": "Los Gallos",
+    "posion": "Medio",
+    "cuello": "Cuello V",
+    "numero": "78",
+    "accesorio": "Sin Accesorio",
+    "idea": "Rayado",
+    "patrocinadores": "Esbasa"
+  },
+  {
+    "id": 300,
+    "nombre": "Oswaldo Sanchez",
+    "equipo": "La Comarca",
+    "posion": "Portero",
+    "cuello": "Cuello V",
+    "numero": "33",
+    "accesorio": "Calcetas Cortas",
+    "idea": "Playera Oversize",
+    "patrocinadores": "Esbasa"
+  },
+  {
+    "id": 400,
+    "nombre": "Jorge Campos",
+    "equipo": "Pumas",
+    "posion": "Portero",
+    "cuello": "Cuello U",
+    "numero": "66",
+    "accesorio": "",
+    "idea": "Colores fosforecentes",
+    "patrocinadores": "PISA"
+  },
+  {
+    "id": 500,
+    "nombre": "Casillas",
+    "equipo": "Real Madrid",
+    "posion": "Defensa",
+    "cuello": "Cuello U",
+    "numero": "1",
+    "accesorio": "Calcetas Cortas",
+    "idea": "Playera Oversize",
+    "patrocinadores": "Enjo-it"
+  }
+]
